@@ -106,8 +106,8 @@ export const projects = [
     image: projectImg4,
     tech: ["HTML","CSS","JavaScript", "React.js","Tailwind CSS"],
     icons: [FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demo: "https://my-portfolio-website-ruddy-zeta.vercel.app/",
+    code: "https://github.com/Vikash-Namdev-7/My-Portfolio-Website",
   },
   {
     title: "Fitness Tracker",
