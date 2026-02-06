@@ -94,7 +94,7 @@ export const projects = [
     title: "Portfolio Website",
     description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
     image: projectImg4,
-    tech: ["HTML","CSS","JavaScript", "React.js","Tailwind CSS"],
+    tech: ["HTML","CSS","JavaScript", "React.js","Tailwind CSS", "EmailJS"],
     icons: [FaReact, FaCloud],
     demo: "https://my-portfolio-website-ruddy-zeta.vercel.app/",
     code: "https://github.com/Vikash-Namdev-7/My-Portfolio-Website",
