@@ -40,8 +40,8 @@ const Hero = () => {
               Contact Me
             </a>
             <a
-              href="/Vikash_Namdev_Resume.pdf"
-              download="Vikash_Namdev_Resume.pdf"
+              href="/VikashNamdev_resume"
+              download="VikashNamdev_resume.pdf"
               className="px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300"
             >
               Download Resume
