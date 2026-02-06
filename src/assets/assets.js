@@ -48,7 +48,7 @@ export const skills = [
     title: 'Backend Development',
     icon: FaServer,
     description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Node.js', 'Express.js', 'REST API']
+    tags: ['Node.js', 'Express.js', 'REST API', 'JWT']
   },
   {
     title: 'Database Management',
@@ -84,20 +84,10 @@ export const projects = [
     // A full-featured online store with shopping cart, user authentication, and payment processing.
     description: "FreshKart is a full-featured e-commerce grocery platform that allows users to browse products, add items to cart, and place orders seamlessly.",
     image: projectImg1,
-    tech: ["React.js", "Node.js", "Express.js","MongoDB", "JWT", "Stripe"],
+    tech: ["React.js", "Node.js", "Express.js","MongoDB", "Tailwind CSS", "JWT", "Stripe"],
     icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
     demo: "https://freshkart-beryl.vercel.app/",
     code: "https://github.com/Vikash-Namdev-7/FreshKart",
-  },
-  {
-    title: "Online Learning Platform",
-    // A productivity application with drag-and-drop functionality and real-time updates.
-    description: "Online Learning Platform – A responsive web app for browsing and exploring courses easily.",
-    image: projectImg2,
-    tech: ["HTML","Tailwind CSS","JavaScript", "React.js"],
-    icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
-    demo: "https://top-courses-eight-chi.vercel.app/",
-    code: "https://github.com/Vikash-Namdev-7/Top-Courses-",
   },
   
   {
@@ -110,32 +100,42 @@ export const projects = [
     code: "https://github.com/Vikash-Namdev-7/My-Portfolio-Website",
   },
   {
-    title: "Fitness Tracker",
-    description: "A mobile app for tracking workouts, nutrition, and health metrics.",
-    image: projectImg3,
-    tech: ["React Native", "GraphQL", "MySQL", "Chart.js"],
-    icons: [FaReact, FaDatabase],
-    demo: "#",
-    code: "#",
+    title: "Online Learning Platform",
+    // A productivity application with drag-and-drop functionality and real-time updates.
+    description: "Online Learning Platform – A responsive web app for browsing and exploring courses easily.",
+    image: projectImg2,
+    tech: ["HTML","Tailwind CSS","JavaScript", "React.js"],
+    icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
+    demo: "https://top-courses-eight-chi.vercel.app/",
+    code: "https://github.com/Vikash-Namdev-7/Top-Courses-",
   },
-  {
-    title: "Chat App",
-    description: "A real-time chat application with group messaging, emojis, and file sharing.",
-    image: projectImg5,
-    tech: ["Socket.IO", "React", "Node.js", "MongoDB"],
-    icons: [FaReact, FaNodeJs, FaDatabase ],
-    demo: "#",
-    code: "#",
-  },
-  {
-    title: "AI Image Generator",
-    description: "Generate images using AI prompts powered by OpenAI's DALL·E model and Cloudinary.",
-    image: projectImg6,
-    tech: ["React", "OpenAI API", "Cloudinary", "Tailwind CSS"],
-    icons: [FaRobot, FaReact, FaCloud],
-    demo: "#",
-    code: "#",
-  }
+  // {
+  //   title: "Fitness Tracker",
+  //   description: "A mobile app for tracking workouts, nutrition, and health metrics.",
+  //   image: projectImg3,
+  //   tech: ["React Native", "GraphQL", "MySQL", "Chart.js"],
+  //   icons: [FaReact, FaDatabase],
+  //   demo: "#",
+  //   code: "#",
+  // },
+  // {
+  //   title: "Chat App",
+  //   description: "A real-time chat application with group messaging, emojis, and file sharing.",
+  //   image: projectImg5,
+  //   tech: ["Socket.IO", "React", "Node.js", "MongoDB"],
+  //   icons: [FaReact, FaNodeJs, FaDatabase ],
+  //   demo: "#",
+  //   code: "#",
+  // },
+  // {
+  //   title: "AI Image Generator",
+  //   description: "Generate images using AI prompts powered by OpenAI's DALL·E model and Cloudinary.",
+  //   image: projectImg6,
+  //   tech: ["React", "OpenAI API", "Cloudinary", "Tailwind CSS"],
+  //   icons: [FaRobot, FaReact, FaCloud],
+  //   demo: "#",
+  //   code: "#",
+  // }
 ];
 
 

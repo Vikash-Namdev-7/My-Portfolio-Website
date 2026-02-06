@@ -1,8 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 import { FaDribbble, FaEnvelope, FaGithub, FaLinkedin, FaMapMarkedAlt, FaPhone, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Your EmailJS service ID, and Public Key 
+
+    const serviceId = "service_qqf1lm3";
+    const templateId = "template_q1ub0mi";
+    const publicKey = "OCyXhJvlhEsA9U1QS";
+
+    // Create a new object that contains dynamic template params
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Vikash Namdev',
+      message: message,
+    };
+
+    // Send the email using EmailJS
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfullu!", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.error("Error sending email: ", error);
+      })
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -25,13 +61,16 @@ const Contact = () => {
 
             {/* Contact Form */}
           <div>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-gray-300 mb-2">
                   Your Name
                 </label>
                 <input
                   type="text"
+                  placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
                 />
               </div>
@@ -42,6 +81,9 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
+                  placeholder="Your Name"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
                 />
               </div>
@@ -52,6 +94,9 @@ const Contact = () => {
                 </label>
                 <textarea
                   type="text"
+                  placeholder="Your Name"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full h-40 bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
                 />
               </div>
